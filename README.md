@@ -1,8 +1,5 @@
-# Ventas-full
 ```mermaid
 graph TD;
-    A[Cliente] -->|Petición API| B(Backend);
-    B --> C{Verificar Auth};
-    C -->|Éxito| D[Base de Datos];
-    C -->|Fallo| E[Respuesta 401];
+    A[Frontend -Astro/Angular-] -->|Petición API| B(API REST -Python-) --> C(Base de Datos -PostgreSQL-) --> D(Reportes);
+
 ```
